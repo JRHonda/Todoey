@@ -11,4 +11,11 @@ import Foundation
 class Item {
     var title: String = String.Empty
     var isDone: Bool = false
+    
+    init(title: String, isDone: Bool = false) {
+        self.title = title
+        if (isDone) {
+            self.isDone = isDone
+        }
+    }
 }
